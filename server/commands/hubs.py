@@ -385,7 +385,7 @@ def ooc_cmd_area_duplicate(client, arg):
             "Invalid number of arguments. Use /area_duplicate <aid>.")
 
 
-@mod_only(area_owners=True)
+@mod_only(hub_owners=True)
 def ooc_cmd_area_rename(client, arg):
     """
     Rename the area to <name>. The area is the one you're currently in
@@ -553,7 +553,7 @@ def ooc_cmd_area_pref(client, arg):
         raise
 
 
-@mod_only(area_owners=True)
+@mod_only(hub_owners=True)
 def ooc_cmd_area_move_delay(client, arg):
     """
     Set the area's move delay to a value in seconds. Can be negative.
